@@ -1,0 +1,24 @@
+<header role="banner">
+  <div class="container">
+    <h1>🎯 DS Custom Theme — Front Page</h1>
+  </div>
+</header>
+
+<main id="main-content" role="main">
+  <section class="hero">
+    <div class="container">
+      <h2>Drupal + Twig + BEM (48-hour demo)</h2>
+      <p class="lede">If you can read this, DS Custom is overriding Olivero and the library should load.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    {{ page.content }}
+  </div>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <small>© {{ "now"|date("Y") }} — DS Custom</small>
+  </div>
+</footer>

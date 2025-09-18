@@ -1,0 +1,12 @@
+<section class="block-featured-case-studies">
+  <h2 class="card-list__heading">Featured Case Studies</h2>
+  <div class="cards">
+    {% for item in items %}
+      <article class="card">
+        <img class="card__media" src="{{ item.image }}" alt="{{ item.title }}" />
+        <h3 class="card__title">{{ item.title }}</h3>
+        <p class="card__meta">{{ item.category }} · {{ item.read_time }} min</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

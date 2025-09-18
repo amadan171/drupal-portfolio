@@ -1,0 +1,66 @@
+{{ attach_library('ds_custom/portfolio') }}
+
+<div class="pf-nav">
+  <div class="pf-wrap">
+    <div class="pf-brand">
+      <span class="pf-avatar" aria-hidden="true">A</span>
+      <div>
+        <div class="pf-name">Amizhthan Madan</div>
+        <div class="pf-role">Front-End Engineer · Accessibility · Performance</div>
+      </div>
+    </div>
+    <nav class="pf-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button id="pfTheme" class="pf-btn pf-btn--ghost" type="button">Dark mode</button>
+    </nav>
+  </div>
+</div>
+
+<header class="pf-hero">
+  <div class="pf-wrap pf-hero__inner">
+    <div class="pf-hero__copy">
+      <h1 class="pf-hero__title">I design &amp; build<br>thoughtful web experiences.</h1>
+      <p class="pf-hero__lede">
+        Clean, accessible interfaces with strong performance and a maintainable component system.
+      </p>
+      <div class="pf-cta">
+        <a href="#work" class="pf-btn">See my work</a>
+        <a href="https://www.linkedin.com/in/amilthanmadan/" target="_blank" rel="noopener" class="pf-btn pf-btn--ghost">LinkedIn</a>
+        <a href="/files/Amilthan_resume.pdf" class="pf-btn pf-btn--ghost">Résumé</a>
+      </div>
+    </div>
+    <div class="pf-blob" aria-hidden="true"></div>
+  </div>
+</header>
+
+<section id="work" class="pf-section">
+  <div class="pf-wrap">
+    <h2 class="pf-h2">Selected Work</h2>
+    <div id="projectGrid" class="pf-grid"></div>
+  </div>
+</section>
+
+
+{# ---- Skills section target ---- #}
+<section id="skills">
+  <h2 class="sr-only">Skills</h2>
+  <div id="skills-chips"></div>
+</section>
+
+{# ---- Experience section target ---- #}
+<section id="experience">
+  <h2 class="sr-only">Experience</h2>
+  <div id="experience-list"></div>
+</section>
+
+{# ---- Contact section (inline list, populated by JS) ---- #}
+<section id="contact" class="pf-section">
+  <div class="pf-wrap">
+    <h2 class="pf-h2">Contact</h2>
+    <p id="am-contact"></p>
+  </div>
+  
+</section>

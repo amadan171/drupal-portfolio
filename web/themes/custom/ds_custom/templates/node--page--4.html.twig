@@ -1,0 +1,37 @@
+{# Attach your GitHub CSS/JS from the theme #}
+{{ attach_library('ds_custom/portfolio') }}
+
+{# Hide Drupal chrome; just render your portfolio container #}
+<main id="am-root">
+  {# --- Selected Work (cards rendered by JS from /api/projects) --- #}
+  <section id="work" class="am-section" aria-labelledby="work-title">
+    <div class="am-wrap">
+      <h2 id="work-title" class="am-h2">Selected Work</h2>
+      <div id="projects-grid" class="am-cards" data-endpoint="/api/projects"></div>
+    </div>
+  </section>
+
+  {# --- Skills (from /api/skills) --- #}
+  <section id="skills" class="am-section" aria-labelledby="skills-title">
+    <div class="am-wrap">
+      <h2 id="skills-title" class="am-h2">Skills</h2>
+      <ul id="am-skills" class="am-tags" role="list"></ul>
+    </div>
+  </section>
+
+  {# --- Experience (from /api/experience) --- #}
+  <section id="experience" class="am-section" aria-labelledby="exp-title">
+    <div class="am-wrap">
+      <h2 id="exp-title" class="am-h2">Experience</h2>
+      <ol id="am-experience" class="am-timeline"></ol>
+    </div>
+  </section>
+
+  {# --- Contact (from /api/profile) --- #}
+  <section id="contact" class="am-section" aria-labelledby="contact-title">
+    <div class="am-wrap">
+      <h2 id="contact-title" class="am-h2">Contact</h2>
+      <p id="am-contact"></p>
+    </div>
+  </section>
+</main>

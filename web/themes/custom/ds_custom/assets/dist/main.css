@@ -1,0 +1,75 @@
+
+/* Basic reset and variables */
+:root { --max: 1100px; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.5; overflow-x: clip; }
+.container { max-width: var(--max); margin-inline: auto; padding: 1rem; }
+.muted { opacity: .7; }
+
+/* Accessibility utilities */
+.skip-link { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.skip-link:focus { left: 1rem; top: 1rem; width: auto; height: auto; padding: .5rem 1rem; outline: 2px solid; background: white; }
+
+/* Header & nav */
+.site-header { border-bottom: 1px solid rgba(0,0,0,.08); }
+.nav { display: flex; gap: 1rem; list-style: none; padding: 0; margin: .5rem 0 0; }
+.nav a { text-decoration: none; }
+
+/* Hero */
+.hero { padding: 3rem 0; }
+.lede { font-size: 1.125rem; max-width: 60ch; }
+.cta-row { display: flex; gap: .75rem; margin-top: 1rem; }
+.btn { padding: .6rem 1rem; border-radius: .5rem; border: 1px solid currentColor; text-decoration: none; display: inline-block; }
+.btn.outline { background: transparent; }
+
+/* Sections */
+.section { padding: 2rem 0; border-top: 1px solid rgba(0,0,0,.06); }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: .5rem; border-bottom: 1px solid rgba(0,0,0,.08); text-align: left; }
+
+/* Cards (BEM) */
+.card { border: 1px solid rgba(0,0,0,.08); border-radius: .5rem; overflow: hidden; }
+.card__media { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
+.card__title { font-weight: 600; margin: .5rem 0; }
+.card__meta { font-size: .875rem; opacity: .8; }
+
+/* Footer */
+.site-footer { padding: 2rem 0; border-top: 1px solid rgba(0,0,0,.08); }
+
+/* Responsive */
+@media (max-width: 700px) { .nav { flex-wrap: wrap; } .hero { padding: 2rem 0; } }
+
+.faq__trigger { display:inline-block; padding:.5rem 1rem; border:1px solid; border-radius:.5rem; }
+.faq__panel { margin-top:.5rem; }
+.faq__trigger:focus { outline:2px solid; outline-offset:2px; }
+/* PROOF styles */
+/* Removed temporary proof/debug styles */
+/* body { outline: 6px solid rgba(0,0,0,.1); } */
+/* .hero { background: #f5f9ff; padding: 2rem 0; border: 2px dashed #7aa7ff; } */
+/* .hero .lede { font-size: 1.125rem; opacity: .85; } */
+/* Layout container */
+.container { max-width: 1100px; margin-inline: auto; padding: 0 1rem; }
+
+/* Block area spacing */
+.block-featured-case-studies { margin: 2rem 0; }
+
+/* Cards grid */
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+@media (max-width: 900px){ .cards { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px){ .cards { grid-template-columns: 1fr; } }
+
+/* Card BEM */
+.card { border: 1px solid rgba(0,0,0,.08); border-radius: .5rem; overflow: hidden; background: #fff; }
+.card__media { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.card__title { font-weight: 600; font-size: 1.05rem; margin: .75rem 1rem .25rem; }
+.card__meta { font-size: .875rem; opacity: .75; margin: 0 1rem 1rem; }
+/* page wrapper */
+.site-max { max-width: none; width: 100%; margin-inline: 0; padding-inline: 0; }
+
+/* Full-bleed sections used on portfolio pages */
+.pf-nav, .pf-hero, .am-header, .am-hero { width: 100vw; margin-inline: calc(50% - 50vw); }
+
+/* Hide default theme header when custom portfolio header/nav is present */
+body:has(.pf-nav) .site-header,
+body:has(.am-header) .site-header { display: none; }

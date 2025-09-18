@@ -1,0 +1,13 @@
+name: DS Custom
+type: theme
+core_version_requirement: ^10 || ^11
+base theme: olivero
+
+libraries:
+  - ds_custom/global-styling
+
+regions:
+  header: Header
+  content: Content
+  sidebar: Sidebar
+  footer: Footer

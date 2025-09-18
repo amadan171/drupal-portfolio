@@ -1,0 +1,6 @@
+portfolio:
+  css:
+    theme:
+      assets/portfolio/styles.css: {}
+  js:
+    assets/portfolio/script.js: {}

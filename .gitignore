@@ -1,0 +1,9 @@
+/vendor/
+/web/sites/default/files/
+/web/sites/default/private/
+/web/sites/simpletest
+/.ddev/
+/dump.sql.gz
+/files.tgz
+.DS_Store
+.idea

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Featured Case Studies module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function featured_case_studies_theme($existing, $type, $theme, $path) {
+  // Get this module's path in Drupal 10+.
+  $module_path = \Drupal::service('extension.list.module')->getPath('featured_case_studies');
+
+  return [
+    'featured_case_studies' => [
+      'variables' => [
+        'items' => [],
+      ],
+      'template' => 'featured-case-studies', // templates/featured-case-studies.html.twig
+      'path' => $module_path . '/templates',
+    ],
+  ];
+}

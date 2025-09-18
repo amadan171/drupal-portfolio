@@ -1,0 +1,22 @@
+{# web/themes/custom/ds_custom/templates/page.html.twig #}
+
+<a class="skip-link visually-hidden-focusable" href="#main-content">
+  {{ 'Skip to main content'|t }}
+</a>
+
+<div class="site-max">
+  <header role="banner" class="site-header">
+    {% if site_name %}
+      <h1 class="site-name">{{ site_name }}</h1>
+    {% endif %}
+    {{ page.header }}
+  </header>
+
+  <main id="main-content" role="main" class="site-main">
+    {{ page.content }}
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    {{ page.footer }}
+  </footer>
+</div>
