@@ -1,0 +1,24 @@
+# Ignore everything by default
+/*
+
+# Keep these repository files
+!.gitignore
+!README.md
+
+# Keep only the custom theme (ds_custom)
+!web/
+web/*
+!web/themes/
+web/themes/*
+!web/themes/custom/
+web/themes/custom/*
+!web/themes/custom/ds_custom/
+web/themes/custom/ds_custom/**
+
+# If you later want to include custom modules, whitelist similarly:
+# !web/modules/
+# web/modules/*
+# !web/modules/custom/
+# web/modules/custom/*
+# !web/modules/custom/<your_module>/
+# web/modules/custom/<your_module>/**
