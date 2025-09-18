@@ -1,10 +1,19 @@
 # **Drupal Portfolio (Custom Theme)**
 
-Personal portfolio implemented as a **Drupal custom theme**.
+Personal portfolio implemented as with **Drupal**.
+
+I built the content of this website using Drupal and exposed them as REST endpoints. It is currently hosted at https://ecfa70a69cf3.ngrok-free.app/portfolio over https through my local machine. But since the tunnel connection is unstable, I have attached screenshots.
+
+<img width="3018" height="1656" alt="image" src="https://github.com/user-attachments/assets/3f41b626-4f74-471a-b48e-2cb832751f30" />
+<img width="3024" height="1664" alt="image" src="https://github.com/user-attachments/assets/3cdd61b3-a351-4506-a1f8-4bb89754ef57" />
+
+I initially made a very rough template of the website and was directly able to host it through github. It can be viewed here - https://amadan171.github.io/portfolio/
+
+It is very similar to the drupal site I developed.
 
 ---
 
-# **🛠 What I Built**
+# ** What I Built**
 
 ## **Theme**
 `web/themes/custom/ds_custom`
@@ -30,11 +39,3 @@ Personal portfolio implemented as a **Drupal custom theme**.
 
 ---
 
-# **💻 Local Development**
-
-```bash
-# Start local environment
-ddev start
-
-# Clear Drupal cache
-ddev drush cr
