@@ -178,7 +178,7 @@ function renderContact(profile){
     const parts = [];
     if (email) parts.push(`Email: <a class=\"am-link\" href=\"mailto:${email}\">${email}</a>`);
     if (linkedin) parts.push(`LinkedIn: <a class=\"am-link\" href=\"${linkedin}\" target=\"_blank\" rel=\"noopener\">${linkedin}</a>`);
-    if (github) parts.push(`GitHub: <a class=\"am-link\" href=\"${github}\" target=\"_blank\" rel=\"noopener\">${github}</a>`);
+  // GitHub link intentionally omitted per request
     p.innerHTML = parts.join(' · ');
     return;
   }

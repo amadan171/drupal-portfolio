@@ -7,3 +7,12 @@
 /files.tgz
 .DS_Store
 .idea
+vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/sites/default/files/
+/.ddev/
+/node_modules/
+/.DS_Store
+*.log
