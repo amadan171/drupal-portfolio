@@ -1,6 +1,6 @@
 # **Drupal Portfolio (Custom Theme)**
 
-Personal portfolio implemented as with **Drupal**.
+Personal portfolio implemented with **Drupal**.
 
 I built the content of this website using Drupal and exposed them as REST endpoints. It is currently hosted at https://ecfa70a69cf3.ngrok-free.app/portfolio over https through my local machine. But since the tunnel connection is unstable, I have attached screenshots.
 
