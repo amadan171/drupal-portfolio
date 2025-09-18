@@ -2,7 +2,7 @@
 
 Personal portfolio implemented with **Drupal**.
 
-I built the content of this website using Drupal and exposed them as REST endpoints. It is currently hosted at https://ecfa70a69cf3.ngrok-free.app/portfolio over https through my local machine. But since the tunnel connection is unstable, I have attached screenshots.
+I built the content of this website using Drupal and exposed them as REST endpoints. I also used AI(mainly ChatGPT) to help me navigate this new tech stack. It is currently hosted at https://ecfa70a69cf3.ngrok-free.app/portfolio over https through my local machine. But since the tunnel connection is unstable, I have attached screenshots.
 
 <img width="3018" height="1656" alt="image" src="https://github.com/user-attachments/assets/3f41b626-4f74-471a-b48e-2cb832751f30" />
 <img width="3024" height="1664" alt="image" src="https://github.com/user-attachments/assets/3cdd61b3-a351-4506-a1f8-4bb89754ef57" />
